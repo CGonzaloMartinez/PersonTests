@@ -12,7 +12,7 @@ namespace Tests
         }
 
         [Test]
-        public void CorrectNameVerifyer() // Cambiá el nombre para indicar qué estás probando
+        public void CorrectNameVerifyer() 
         {
             Person testingPerson = new Person("name","5.342.187-9");
             string expectedName = "name";
@@ -21,7 +21,7 @@ namespace Tests
         }
 
         [Test]
-          public void IncorrectNameVerifyer() // Cambiá el nombre para indicar qué estás probando
+          public void IncorrectNameVerifyer() 
         {
             Person testingPerson = new Person("","5.342.187-9");
             string expectedName = null;
@@ -31,7 +31,7 @@ namespace Tests
 
 
         [Test]
-         public void CorrectIdVerifyer() // Cambiá el nombre para indicar qué estás probando
+         public void CorrectIdVerifyer() 
         {
             Person testingPerson = new Person("Gonzalo","5.342.187-9");
             string expectedId = "5.342.187-9";
@@ -49,7 +49,7 @@ namespace Tests
         }
 
         [Test]
-        public void ChangeToCorrectName() // Cambiá el nombre para indicar qué estás probando
+        public void ChangeToCorrectNameVerifyer() 
         {
             Person testingPerson = new Person("name","5.342.187-9");
             testingPerson.Name =  "newCorrectName";
@@ -59,7 +59,7 @@ namespace Tests
         }
 
         [Test]
-          public void ChangeToIncorrectName() 
+          public void ChangeToIncorrectNameVerifyer() 
         {
             Person testingPerson = new Person("name","5.342.187-9");
             testingPerson.Name =  "";
@@ -69,7 +69,7 @@ namespace Tests
         }
 
         [Test]
-          public void ChangeToCorrectId() 
+          public void ChangeToCorrectIdVerifyer() 
         {
             Person testingPerson = new Person("name","6.000.000-8");
             testingPerson.ID =  "5.900.000-9";
@@ -89,7 +89,7 @@ namespace Tests
         }
 
         [Test]
-          public void ChangeToNullId() 
+          public void ChangeToNullIdVerifyer() 
         {
             Person testingPerson = new Person("name","6.000.000-8");
             testingPerson.ID =  "";
@@ -97,14 +97,5 @@ namespace Tests
             string actualId = testingPerson.ID;
             Assert.AreEqual(expectedId, actualId);
         }
-
-        
-
-
-
-
-
-
-
     }
 }
